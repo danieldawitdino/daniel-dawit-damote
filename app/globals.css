@@ -1,0 +1,17 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant dark (&:where(.dark, .dark *));
+
+*{
+  font-family: Outfit;
+}
+html {
+  @apply bg-white dark:bg-[#11001F];
+}
+body {
+   @apply bg-white text-black dark:bg-[#11001F] dark:text-white;
+}
